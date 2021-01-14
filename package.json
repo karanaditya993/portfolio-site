@@ -1,0 +1,25 @@
+{
+  "name": "karan-aditya-personal-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Karan Aditya Personal Site",
+  "author": "Karan Aditya",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^2.26.1",
+    "gatsby-plugin-google-analytics": "^2.9.0",
+    "gatsby-plugin-postcss": "^3.5.0",
+    "postcss": "^8.2.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
