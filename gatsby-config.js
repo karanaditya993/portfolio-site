@@ -4,6 +4,8 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-postcss",
+    "gatsby-plugin-typescript",
+    "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -11,4 +13,4 @@ module.exports = {
       },
     },
   ],
-};
+}
