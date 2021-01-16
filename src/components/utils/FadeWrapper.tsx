@@ -7,7 +7,7 @@ export interface IFadeWrapperProps {
 }
 
 export const FadeWrapper = ({ shouldFade, children } : IFadeWrapperProps) => {
-  return shouldFade ? 
+  return shouldFade ?
     <Fade left duration={1000} delay={500} distance="30px">
       {children}
     </Fade> : <>{children}</>
