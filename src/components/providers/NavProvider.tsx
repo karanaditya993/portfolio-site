@@ -9,7 +9,6 @@ export default ({ children }) => {
   const [nav, setNavData] = useState([]);
   
   useEffect(() => {
-    console.log(sections)
     setNavData([ ...sections ]);
   }, []);
 
