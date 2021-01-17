@@ -3,47 +3,71 @@ import React from 'react'
 import { FadeWrapper } from '../utils'
 import AboutCard from './AboutCard'
 
+import { StaticQuery, graphql } from 'gatsby'
+
 export const AboutSection = () => (
-  <section id="about">
-    <div className="pt-12 mb-10 bg-primary-dark text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader
-          headlineTitle="About Me"
-          headlineText={'Software Engineer based in NYC 🗽'}
-        />
-
-        <div className="mt-10">
-          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-            <FadeWrapper shouldFade delay={500}>
-              <AboutCard
-                title="Developer"
-                description="I have half a decade of professional industry experience building software, the majority of
-                which has been with a frontend focus. I am currently a Software Engineer at"
-                descriptionLink="https://teachable.com"
-                companyText="Teachable"
+  <StaticQuery
+    query={graphql`
+      query AboutQuery {
+        allYaml {
+          edges {
+            node {
+              about {
+                sectionId,
+                headlineText,
+                headlineTitle,
+                cards {
+                  companyText
+                  description
+                  descriptionLink
+                  id,
+                  title
+                  SVGPath
+                }
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={data => {
+      const { sectionId, headlineText, headlineTitle, cards } = data.allYaml.edges[0].node.about
+      return (
+        <section id={sectionId}>
+          <div className="pt-12 mb-10 bg-primary-dark text-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <SectionHeader
+                headlineTitle={headlineTitle}
+                headlineText={headlineText}
               />
-            </FadeWrapper>
 
-            <FadeWrapper shouldFade delay={1000}>
-              <AboutCard
-                title="Engineer"
-                description="I hold a Bachelor of Science degree from the"
-                descriptionLink=""
-                companyText="University of Wisconsin - Madison's College of Engineering"
-              />
-            </FadeWrapper>
-
-            <FadeWrapper shouldFade delay={1250}>
-              <AboutCard
-                title="Instructor"
-                description="At night, I help lead and mentor students enrolled in the University Program of"
-                descriptionLink="https://www.fullstackacademy.com/"
-                companyText="Fullstack Academy"
-              />
-            </FadeWrapper>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </section>
+              <div className="mt-10">
+                <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                  {cards.map(({
+                    companyText,
+                    delay,
+                    description,
+                    descriptionLink,
+                    id,
+                    SVGPath,
+                    title,
+                  }) => (
+                    <FadeWrapper key={id} shouldFade delay={delay}>
+                      <AboutCard
+                        companyText={companyText}
+                        description={description}
+                        descriptionLink={descriptionLink}
+                        title={title}
+                        SVGPath={SVGPath}
+                      />
+                    </FadeWrapper>
+                  ))}
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+      )
+    }}
+  />
 )
