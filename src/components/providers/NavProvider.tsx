@@ -1,34 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react'
-import { nanoid } from 'nanoid'
-import { sections, ISectionData } from '../../utils'
-
-export interface INavData {
-  id: string,
-  name: ISectionData['name'],
-  linkTo: ISectionData['section'],
-}
-
-const navData : INavData[] = [{
-    id: nanoid(),
-    name: sections.about.name,
-    linkTo: sections.about.section,
-  },
-  {
-    id: nanoid(),
-    name: sections.work.name,
-    linkTo: sections.work.section,
-  },
-  {
-    id: nanoid(),
-    name: sections.projects.name,
-    linkTo: sections.projects.section,
-  },
-  {
-    id: nanoid(),
-    name: sections.resume.name,
-    linkTo: sections.resume.section
-  }
-]
+import { sections } from '../../utils'
 
 export const NavContext = createContext([])
 
@@ -38,7 +9,8 @@ export default ({ children }) => {
   const [nav, setNavData] = useState([]);
   
   useEffect(() => {
-    setNavData([ ...navData ]);
+    console.log(sections)
+    setNavData([ ...sections ]);
   }, []);
 
   return (

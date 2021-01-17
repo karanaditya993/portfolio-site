@@ -32,11 +32,15 @@ export const Nav = ({ setMenuOpen } : IBaseProps) => (
       </div>
       <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
         <NavConsumer>
-          {value => value.map((section) => (
-            <Link key={section.id} to={section.linkTo} smooth duration={1000}>
-              <span className="font-medium text-gray-500 hover:text-blue-400 cursor-pointer">{section.name}</span>
-            </Link>
-          ))}
+          {value => value.map(section =>
+            !section.hidden && (
+              <Link key={section.id} to={section.name} smooth duration={1000}>
+                <span className="font-medium text-gray-500 hover:text-blue-400 cursor-pointer">{
+                  `${section.name.charAt(0).toUpperCase()}${section.name.slice(1)}`
+                }</span>
+              </Link>
+            )
+          )}
         </NavConsumer>
       </div>
     </nav>
@@ -68,11 +72,12 @@ export const MobileMenu = ({ setMenuOpen } : IBaseProps) => (
         <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
           <div className="px-2 pt-2 pb-3 space-y-1" role="none">
             <NavConsumer>
-              {value => value.map((section) => (
-                <Link key={section.id} to={section.linkTo} smooth duration={1000}>
-                  <span className="block px-3 py-2 rounded-md text-base font-medium text-secondary-normal hover:text-blue-400 hover:bg-gray-50 cursor-pointer" role="menuitem">{section.name}</span>
-                </Link>
-              ))}
+              {value => value.map(section => !section.hidden && (
+                <Link key={section.id} to={section.name} smooth duration={1000}>
+                  <span className="block px-3 py-2 rounded-md text-base font-medium text-secondary-normal hover:text-blue-400 hover:bg-gray-50 cursor-pointer" role="menuitem">{
+                    `${section.name.charAt(0).toUpperCase()}${section.name.slice(1)}`
+                  }</span>
+                </Link>))}
             </NavConsumer>
           </div>
         </div>

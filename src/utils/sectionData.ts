@@ -1,30 +1,39 @@
+import { nanoid } from 'nanoid'
+
 export interface ISectionData {
-  section: string,
+  id: string,
   name: string,
+  hidden?: boolean,
 }
 
-export interface ISections {
-  about: ISectionData,
-  work: ISectionData,
-  projects: ISectionData,
-  resume: ISectionData,
+export enum SectionTypes {
+  ABOUT = 'about',
+  HOME = 'home',
+  PROJECTS = 'projects',
+  RESUME = 'resume',
+  WORK = 'work'
 }
 
-export const sections : ISections = {
-  about: {
-    section: 'about',
-    name: 'About'
+export const sections : ISectionData[] = [
+  {
+    id: nanoid(),
+    name: SectionTypes.HOME,
+    hidden: true,
   },
-  work: {
-    section: 'work',
-    name: 'Work'
+  {
+    id: nanoid(),
+    name: SectionTypes.ABOUT
   },
-  projects: {
-    section: 'projects',
-    name: 'Projects'
+  {
+    id: nanoid(),
+    name: SectionTypes.WORK
   },
-  resume: {
-    section: 'resume',
-    name: 'Resume'
+  {
+    id: nanoid(),
+    name: SectionTypes.PROJECTS
   },
-}
+  {
+    id: nanoid(),
+    name: SectionTypes.RESUME
+  },
+]
