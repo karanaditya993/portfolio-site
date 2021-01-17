@@ -34,6 +34,10 @@ export const Nav = ({ setMenuOpen } : IBaseProps) => (
         <NavConsumer>
           {value => value.map(section =>
             !section.hidden && (
+              section.external ?
+              <a className="font-medium text-gray-500 hover:text-blue-400 cursor-pointer" key={section.id} href={section.linkTo} target="_blank">
+                {`${section.name.charAt(0).toUpperCase()}${section.name.slice(1)}`}
+              </a> :
               <Link key={section.id} to={section.name} smooth duration={1000}>
                 <span className="font-medium text-gray-500 hover:text-blue-400 cursor-pointer">{
                   `${section.name.charAt(0).toUpperCase()}${section.name.slice(1)}`
@@ -73,6 +77,10 @@ export const MobileMenu = ({ setMenuOpen } : IBaseProps) => (
           <div className="px-2 pt-2 pb-3 space-y-1" role="none">
             <NavConsumer>
               {value => value.map(section => !section.hidden && (
+                section.external ?
+                <a className="block px-3 py-2 rounded-md text-base font-medium text-secondary-normal hover:text-blue-400 hover:bg-gray-50 cursor-pointer" role="menuitem" key={section.id} href={section.linkTo} target="_blank">
+                  {`${section.name.charAt(0).toUpperCase()}${section.name.slice(1)}`}
+                </a> :
                 <Link key={section.id} to={section.name} smooth duration={1000}>
                   <span className="block px-3 py-2 rounded-md text-base font-medium text-secondary-normal hover:text-blue-400 hover:bg-gray-50 cursor-pointer" role="menuitem">{
                     `${section.name.charAt(0).toUpperCase()}${section.name.slice(1)}`

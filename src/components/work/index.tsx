@@ -4,7 +4,7 @@ import React from 'react'
 
 export const WorkSection = () => (
   <section id="work">
-    <div className="pb-20 bg-primary-dark text-white">
+    <div className="bg-primary-dark text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           headlineTitle="Work Experience"
