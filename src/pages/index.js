@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutSection, HeroSection, WorkSection, ProjectsSection, Footer } from '../components'
+import { AboutSection, BackToTop, HeroSection, WorkSection, ProjectsSection, Footer } from '../components'
 
 export default () => (
   <>
@@ -10,6 +10,7 @@ export default () => (
         <WorkSection />
         <ProjectsSection />
       </div>
+      <BackToTop />
     </main>
     <Footer />
   </>
