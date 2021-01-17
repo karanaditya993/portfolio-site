@@ -6,6 +6,7 @@ import GatsbyConfig from '../../gatsby-config'
 export default () => (
   <>
     <Helmet>
+      <link rel="icon" href="/images/KaranLogo.jpeg" />
       <title>{GatsbyConfig.siteMetadata.title}</title>
     </Helmet>
     <main>

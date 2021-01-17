@@ -11,9 +11,8 @@ export const Nav = ({ setMenuOpen } : IBaseProps) => (
     <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
       <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
         <div className="flex items-center justify-between w-full md:w-auto">
-          {/* Insert Karan Logo Here */}
           <div>
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-white.svg" alt="" />
+            <img className="h-8 w-auto" src="/images/KaranLogo.jpeg" alt="" />
           </div>
           <div className="-mr-2 flex items-center md:hidden">
             <button
@@ -58,7 +57,7 @@ export const MobileMenu = ({ setMenuOpen } : IBaseProps) => (
       <div className="rounded-lg bg-primary-normal shadow-md bg-black ring-1 ring-black ring-opacity-5 overflow-hidden">
         <div className="px-2 pt-4 flex items-center justify-between">
           <div>
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-white.svg" alt="" />
+            <img className="h-8 w-auto" src="/images/KaranLogo.jpeg" alt="" />
           </div>
           <div className="-mr-2">
             <button
