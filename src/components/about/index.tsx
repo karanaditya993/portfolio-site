@@ -4,12 +4,12 @@ import { FadeWrapper } from '../utils'
 import AboutCard from './AboutCard'
 
 export const AboutSection = () => (
-  <section id="about">
-    <div className="py-12 bg-primary-dark text-white">
+  <section id="about" className="divide-y divide-yellow-500">
+    <div className="pt-12 mb-10 bg-primary-dark text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           headlineTitle="About Me"
-          headlineText={['I am a Software Engineer based in New York City 🗽', <br/>, 'I enjoy being immersed in situations that pull me out of my comfort zone, and operate best at the junction of technical and personal.']}
+          headlineText={'Software Engineer based in NYC 🗽'}
         />
 
         <div className="mt-10">

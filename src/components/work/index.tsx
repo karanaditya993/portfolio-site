@@ -9,14 +9,23 @@ export const WorkSection = () => (
         <SectionHeader
           headlineTitle="Work Experience"
         />
-        <div className="grid lg:flex lg:items-center lg:justify-between">
+        <div className="lg:grid">
           <FadeWrapper shouldFade delay={500}>
             <Experience
-                position="Software Engineer"
+                position="Software Engineer II"
                 company="Teachable"
                 location="New York, NY"
                 timeline="September 2020 - Present"
                 description="Currently a part of the Internal Tools team at Teachable, helping ensure our teams are as productive as possible."
+              />
+          </FadeWrapper>
+          <FadeWrapper shouldFade delay={500}>
+            <Experience
+                position="Web Development Instructor"
+                company="Fullstack Academy"
+                location="Remote"
+                timeline="December 2020 - Present"
+                description="Part-time Instructor at Fullstack Academy's University Program. Teaching a cohort of 30+ students full-stack Javascript."
               />
           </FadeWrapper>
           <FadeWrapper shouldFade delay={1000}>

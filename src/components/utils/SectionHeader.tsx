@@ -3,7 +3,7 @@ import { FadeWrapper } from './FadeWrapper'
 
 export interface ISectionHeaderProps {
   headlineTitle?: string,
-  headlineText?: [...any],
+  headlineText?: string,
 }
 
 export const SectionHeader = ({
@@ -11,7 +11,7 @@ export const SectionHeader = ({
   headlineText,
 }: ISectionHeaderProps) => (
   <FadeWrapper shouldFade>
-    <div className="lg:text-center">
+    <div className="lg:text-center mb-10">
       <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
         {headlineTitle}
       </p>
