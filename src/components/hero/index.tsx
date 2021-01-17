@@ -3,7 +3,7 @@ import { Slanted } from '../styled'
 import { MobileMenu, Nav } from '../nav'
 import { FadeWrapper } from '../utils'
 
-export const TailwindHeroSection = () => {
+export const HeroSection = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
@@ -30,9 +30,9 @@ export const TailwindHeroSection = () => {
                     <span className="block text-secondary-normal xl:inline"> Karan</span>
                   </h1>
                   <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                    Software Developer 👨🏽‍💻
+                    Developer 👨🏽‍💻
                     Engineer 🎓
-                    Instructor 👨🏽‍🏫
+                    Instructor 📚
                   </p>
                 </div>
               </main>

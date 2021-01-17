@@ -8,5 +8,5 @@ export const Slanted = styled.div`
   border-top: 0;
   -webkit-clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
   clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
-  padding-bottom: 25%
+  padding-bottom: 25%;
 `;
