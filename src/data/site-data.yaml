@@ -35,41 +35,34 @@ work:
   headlineTitle: Work Experience
   experience:
   - id: 1
-    position: Software Engineer
+    position: Founding Engineer
     company: Stride Therapy
     location: New York, NY
     timeline: May 2021 - Present
-    description: Founding Team at Stride Therapy, empowering clinicians through modern and intuitive software.
-    delay: 500
+    delay: 250
   - id: 2
     position: Software Engineer II
     company: Teachable
     location: New York, NY
     timeline: September 2020 - May 2021
-    description: Worked on the internal tools application, allowing the customer education, support and success teams of one of the largest online course/coaching platforms to be as productive as possible.
     delay: 500
   - id: 3
     position: Web Development Instructor
     company: Fullstack Academy
     location: Remote
     timeline: December 2020 - Present
-    description: Part-time Instructor at Fullstack Academy's University Program. Teaching full-stack Javascript to a cohort of 30+ students.
     delay: 750
   - id: 4
     position: Software Engineer
     company: Intent
     location: New York, NY
     timeline: June 2018 - September 2020
-    description: Built advertising placements served to millions of users worldwide on online
-              travel agencies like Expedia, Priceline and Orbitz.
     delay: 1000
   - id: 5
     position: Frontend Engineer
     company: Terminus Software
     location: San Francisco, CA
     timeline: May 2016 - June 2018
-    description: Built full fledged analytics products used by B2B marketers at Fortune 500 companies across the globe. Part of
-              a small engineering team at an early-stage startup.
     delay: 1250
 projects:
   sectionId: projects
