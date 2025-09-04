@@ -1,7 +1,5 @@
 import { nanoid } from 'nanoid'
 
-const RESUME_LINK = 'https://karanaditya.imgix.net/pdf/KaranAdityaResume.PDF'
-
 export interface ISectionData {
   id: string,
   name: string,
@@ -14,7 +12,7 @@ export enum SectionTypes {
   ABOUT = 'about',
   HOME = 'home',
   PROJECTS = 'projects',
-  RESUME = 'resume',
+  RESUME = '<contact me> for resume',
   WORK = 'work'
 }
 
@@ -40,6 +38,6 @@ export const sections : ISectionData[] = [
     id: nanoid(),
     name: SectionTypes.RESUME,
     external: true,
-    linkTo: RESUME_LINK
+    linkTo: 'mailto:karanaditya993@gmail.com'
   },
 ]
