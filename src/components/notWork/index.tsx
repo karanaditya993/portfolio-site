@@ -19,7 +19,7 @@ export const NotWorkSection = () => (
         }
       }`}
       render={data => {
-        const { headlineTitle, description, delay } = data.allYaml.edges[0].node.work
+        const { headlineTitle, description, delay } = data.allYaml.edges[0].node.notWork
         return (
           <section id="not-work">
             <div className="bg-primary-dark text-white">
