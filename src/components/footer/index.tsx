@@ -3,7 +3,7 @@ import React from 'react'
 export const Footer = () => (
   <footer className="bg-primary-dark">
     <div className="flex justify-center bg-primary-dark">
-      <a href="https://linkedin.com/in/karanaditya993" className="text-tertiary-normal hover:text-gray-800 m-2" target="_blank">
+      <a href="https://linkedin.com/in/karanaditya" className="text-tertiary-normal hover:text-gray-800 m-2" target="_blank">
         <span className="icon  icon--linkedin">
         <svg style={{'width':'24px', 'height':'24px'}} viewBox="0 50 512 512" >
           <path fill="currentColor" d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
