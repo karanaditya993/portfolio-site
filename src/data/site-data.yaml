@@ -11,9 +11,9 @@ about:
   cards:
   - id: 1
     title: Developer
-    description: I have half a decade of professional industry experience building software, the majority of which has been with a frontend focus. I am currently on the founding team at 
-    descriptionLink: https://stridethera.com
-    companyText: Stride Therapy
+    description: I have 10+ years of professional industry experience building software, the majority of which has been in early stage startup environments. I am currently on the founding team at 
+    descriptionLink: https://strideemr.ai
+    companyText: Stride EMR
     delay: 500
     SVGPath: M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z
   - id: 2
@@ -25,7 +25,7 @@ about:
     SVGPath: M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-3 3a1 1 0 100 2h.01a1 1 0 100-2H10zm-4 1a1 1 0 011-1h.01a1 1 0 110 2H7a1 1 0 01-1-1zm1-4a1 1 0 100 2h.01a1 1 0 100-2H7zm2 1a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm4-4a1 1 0 100 2h.01a1 1 0 100-2H13zM9 9a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zM7 8a1 1 0 000 2h.01a1 1 0 000-2H7z
   - id: 3
     title: Instructor
-    description: I help lead and mentor students enrolled in the University Program of
+    description: I help lead students enrolled in the Software Development University Program of
     descriptionLink: https://www.fullstackacademy.com/
     companyText: Fullstack Academy
     delay: 1250
@@ -35,7 +35,7 @@ work:
   headlineTitle: Work Experience
   experience:
   - id: 1
-    position: Founding Engineer
+    position: Founding Team
     company: Stride Therapy
     location: New York, NY
     timeline: May 2021 - Present
