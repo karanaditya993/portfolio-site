@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid'
 
-const RESUME_LINK = 'https://karanaditya.imgix.net/pdf/KaranAdityaResume.pdf'
+const RESUME_LINK = 'https://karanaditya.imgix.net/pdf/KaranAdityaResume.PDF'
 
 export interface ISectionData {
   id: string,
