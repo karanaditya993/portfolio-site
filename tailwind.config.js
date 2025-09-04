@@ -5,15 +5,15 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          dark: '#282A36',
-          normal: '#44475A',
-          light: '#6272A4'
+          dark: '#D6A99D',
+          normal: '#D6DAC8',
+          light: '#FBF3D5'
         },
         secondary: {
-          normal: '#FF5555'
+          normal: '#9CAFAA'
         },
         tertiary: {
-          normal: '#8BE9FD'
+          normal: '#9CAFAA'
         },
       },
       backgroundImage: () => ({
