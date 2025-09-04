@@ -12,7 +12,7 @@ export enum SectionTypes {
   ABOUT = 'about',
   HOME = 'home',
   PROJECTS = 'projects',
-  RESUME = '<contact me> for resume',
+  GET_IN_TOUCH = 'get in touch',
   WORK = 'work'
 }
 
@@ -36,8 +36,7 @@ export const sections : ISectionData[] = [
   },
   {
     id: nanoid(),
-    name: SectionTypes.RESUME,
-    external: true,
+    name: SectionTypes.GET_IN_TOUCH,
     linkTo: 'mailto:karanaditya993@gmail.com'
   },
 ]
