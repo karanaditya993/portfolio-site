@@ -14,11 +14,13 @@ export const WorkSection = () => (
             work {
               headlineTitle
               experience {
-                position
                 company
-                description 
                 delay
+                description
                 id
+                location
+                position
+                timeline
               }
             }
           }
@@ -40,14 +42,16 @@ export const WorkSection = () => (
                   delay,
                   description,
                   id,
+                  location,
                   position,
+                  timeline,
                 }) => (
                   <FadeWrapper key={id} shouldFade delay={delay}>
                     <Experience
                         position={position}
                         company={company}
-                        location={""}
-                        timeline=""
+                        location={location}
+                        timeline={timeline}
                         description={description}
                       />
                   </FadeWrapper>

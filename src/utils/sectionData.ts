@@ -11,7 +11,7 @@ export interface ISectionData {
 export enum SectionTypes {
   ABOUT = 'about',
   HOME = 'home',
-  NOT_WORK = '!work',
+  NOT_WORK = '!Work',
   GET_IN_TOUCH = 'get in touch',
   WORK = 'work'
 }
