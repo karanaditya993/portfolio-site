@@ -37,6 +37,7 @@ export const sections : ISectionData[] = [
   {
     id: nanoid(),
     name: SectionTypes.GET_IN_TOUCH,
+    external: true,
     linkTo: 'mailto:karanaditya993@gmail.com'
   },
 ]
