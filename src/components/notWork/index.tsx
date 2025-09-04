@@ -29,7 +29,7 @@ export const NotWorkSection = () => (
                 />
                 <div className="lg:grid">
                   <FadeWrapper shouldFade delay={delay}>
-                    <div className="mt-2 flex items-center text-sm text-gray-500">
+                    <div className="text-center mt-2 flex justify-center items-center text-sm text-white">
                       {description}
                     </div>
                   </FadeWrapper>
