@@ -11,7 +11,7 @@ about:
   cards:
   - id: 1
     title: Developer
-    description: I have 10+ years of professional industry experience building software, the majority of which has been in early stage startup environments. I am currently on the founding team at 
+    description: I have 10+ years of professional industry experience building software, the majority of which has been in early stage startup environments. I am currently building 
     descriptionLink: https://strideemr.ai
     companyText: Stride EMR
     delay: 500
@@ -39,7 +39,7 @@ work:
     company: Stride Therapy
     location: New York, NY
     timeline: May 2021 - Present
-    description: AI-powered PT software
+    description: AI-powered PT software. Employee #1.
     delay: 250
   - id: 2
     position: Software Engineer II
@@ -85,5 +85,5 @@ projects:
 notWork:
   sectionId: notWork
   headlineTitle: Hobbies and Interests
-  description: I like to run marathons. Check out my strava profile below to see which one I'm running next!
+  description: I occasionally like to run marathons. Check out my strava profile below to see which one I'm running next!
   delay: 250

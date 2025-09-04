@@ -10,7 +10,6 @@ export const NotWorkSection = () => (
           edges {
             node {
               notWork {
-                sectionId
                 headlineTitle
                 description
                 delay
@@ -20,7 +19,7 @@ export const NotWorkSection = () => (
         }
       }`}
       render={data => {
-        const { sectionId, headlineTitle, description, delay } = data.allYaml.edges[0].node.work
+        const { headlineTitle, description, delay } = data.allYaml.edges[0].node.work
         return (
           <section id="not-work">
             <div className="bg-primary-dark text-white">
@@ -29,7 +28,7 @@ export const NotWorkSection = () => (
                   headlineTitle={headlineTitle}
                 />
                 <div className="lg:grid">
-                  <FadeWrapper key={sectionId} shouldFade delay={delay}>
+                  <FadeWrapper shouldFade delay={delay}>
                     <div className="mt-2 flex items-center text-sm text-gray-500">
                       {description}
                     </div>
