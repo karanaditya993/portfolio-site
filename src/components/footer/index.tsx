@@ -20,6 +20,11 @@ export const Footer = () => (
           />
         </svg>
       </a>
+      <a href="https://strava.app.link/4EKgZ50zoWb" className="text-tertiary-normal hover:text-gray-800 m-2" target="_blank">
+        <svg viewBox="0 0 24 24" style={{'width':'24px', 'height':'24px'}} aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 13l-5 -10l-5 10m6 0l4 8l4 -8"/>
+        </svg>
+      </a>
     </div>
     <div className="flex text-primary-light justify-center bg-primary-dark mt-2">
       <div>© Karan Aditya</div>
