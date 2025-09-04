@@ -14,7 +14,7 @@ export default () => (
         <HeroSection />
         <AboutSection />
         <WorkSection />
-        <ProjectsSection />
+        // <NotWorkSection />
       </div>
       <BackToTop />
     </main>
