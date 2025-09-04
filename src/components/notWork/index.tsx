@@ -1,7 +1,6 @@
-import { FadeWrapper, SectionHeader } from '../utils'
-import { Experience } from './Experience'
-import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import React from 'react'
+import { FadeWrapper, SectionHeader } from '../utils'
 
 export const NotWorkSection = () => (
     <StaticQuery
@@ -11,46 +10,30 @@ export const NotWorkSection = () => (
           edges {
             node {
               notWork {
+                sectionId
                 headlineTitle
-                experience {
-                    position
-                    company
-                    description 
-                    delay
-                    id
-                }
+                description
+                delay
               }
             }
           }
         }
       }`}
       render={data => {
-        const { headlineTitle, experience } = data.allYaml.edges[0].node.work
+        const { sectionId, headlineTitle, description, delay } = data.allYaml.edges[0].node.work
         return (
-          <section id="work">
+          <section id="not-work">
             <div className="bg-primary-dark text-white">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <SectionHeader
                   headlineTitle={headlineTitle}
                 />
                 <div className="lg:grid">
-                  {experience.map(({
-                    position,
-                    company,
-                    description,
-                    delay,
-                    id,
-                  }) => (
-                    <FadeWrapper key={id} shouldFade delay={delay}>
-                      <Experience
-                          position={position}
-                          company={company}
-                          location={""}
-                          timeline={""}
-                          description={description}
-                        />
-                    </FadeWrapper>
-                  ))}
+                  <FadeWrapper key={sectionId} shouldFade delay={delay}>
+                    <div className="mt-2 flex items-center text-sm text-gray-500">
+                      {description}
+                    </div>
+                  </FadeWrapper>
                 </div>
               </div>
             </div>
