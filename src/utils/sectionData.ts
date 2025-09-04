@@ -11,7 +11,7 @@ export interface ISectionData {
 export enum SectionTypes {
   ABOUT = 'about',
   HOME = 'home',
-  PROJECTS = 'projects',
+  NOT_WORK = '!work',
   GET_IN_TOUCH = 'get in touch',
   WORK = 'work'
 }
@@ -32,7 +32,7 @@ export const sections : ISectionData[] = [
   },
   {
     id: nanoid(),
-    name: SectionTypes.PROJECTS
+    name: SectionTypes.NOT_WORK
   },
   {
     id: nanoid(),
