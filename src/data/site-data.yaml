@@ -82,4 +82,14 @@ projects:
     description: A browser extension to clear your workspace and your mind.
     github: https://github.com/karanaditya993/tidy-tabs
     link: https://chrome.google.com/webstore/detail/tidytabs/mfcdfhecemnhilkobccglegnbdkhmdam?hl=en
+notWork:
+  sectionId: notWork
+  headlineTitle: Hobbies and Interests
+  experience:
+  - id: 1
+    position: 🏃🏾‍♂️‍➡️
+    company: Marathon Runner
+    location: 
+    timeline: 
+    description: I like to run marathons. Check out my strava profile below to see which one I'm running next!
 
