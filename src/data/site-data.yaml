@@ -39,7 +39,7 @@ work:
     company: Stride Therapy
     location: New York, NY
     timeline: May 2021 - Present
-    description: AI-powered PT software. Employee #1.
+    description: "AI-powered PT software. Employee #1."
     delay: 250
   - id: 2
     position: Software Engineer II
