@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutSection, BackToTop, HeroSection, WorkSection, ProjectsSection, Footer } from '../components'
+import { AboutSection, BackToTop, HeroSection, WorkSection, NotWorkSection, Footer } from '../components'
 import { Helmet } from 'react-helmet'
 import GatsbyConfig from '../../gatsby-config'
 
